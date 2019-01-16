@@ -6,6 +6,7 @@
 ## makeCacheMatrix() creates a special matrix, which includes a set of 4 functions for caching the inverse of a matrix
 
 makeCacheMatrix <- function(x = matrix()) {
+    # invmat  acronym for inverted matrix
     invmat <- NULL
     # set() - function for changing the input matrix
     set <- function(y) {
@@ -14,7 +15,6 @@ makeCacheMatrix <- function(x = matrix()) {
     }
     # get() - function for retrieving the input matrix
     get <- function() x
-    # invmat  acronym for inverted matrix
     # setinvmat() - function for setting the inverted matrix
     setinvmat <- function(inv) invmat <<- inv
     # getinvmat() - function for retrieving the inverted matrix
